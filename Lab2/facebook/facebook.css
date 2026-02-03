@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F2F4F7;
+    margin: 0;
+    padding: 0;
+}
+
+#LowTab{
+    position: absolute;  /* ВЕРНУТЬ */
+    background-color: white;
+    width: 100%;
+    bottom: 0;          /* ВЕРНУТЬ */
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.LowLangs{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* выравнивание по левому краю */
+    padding-bottom: 8px;
+    border-bottom: 1px solid #dadde1;
+    max-width: 980px;
+    margin: 0 auto 10px auto; /* центрируем контейнер */
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.LowLangs a{
+    color: #8a8d91;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 16px;
+}
+
+.LowLangs a:hover{
+    text-decoration: underline;
+}
+
+.button{
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+
+    font-size: 13px;
+    
+    padding: 0 8px;
+    height: 18px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #ebedf0;
+}
+
+.LowLinks{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 980px;
+    margin: 0 auto 8px auto; 
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.LowLinks a{
+    color: #8a8d91;
+    text-decoration: none;
+    font-size: 12px;
+    font-family:  Helvetica, Arial, sans-serif;
+    line-height: 16px;
+}
+
+.LowLinks a:hover{
+    text-decoration: underline;
+}
+
+.container{
+    
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;  /* ДОБАВИТЬ эту строку */
+    padding-top: 100px;
+}
+
+.left_block{
+    
+    max-width: 580px;
+}
+
+.left_block p{
+    color: #1c1E21;
+    font-size: 28px;
+    font-family: Helvetica, sans-serif;
+    line-height: 28px;
+    padding-left: 30px;
+    margin-top:0px;
+    
+}
+
+
+.img_logo {
+    width: 320px;
+    height:106px;
+
+}
+
+.right_block{
+    background-color: white;
+    width: 396px;
+    height: 349.83px;
+    box-shadow: 0 10px 20px rgb(214, 214, 218);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.inputMail{
+    width:364px;
+    height: 52px;
+    border: 1px solid #dadbdd;
+    border-radius: 8px;
+    padding-left: 20px;
+    text-align:left;
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #1c1e21;
+    caret-color: #1877f2;
+    margin-bottom: 10px;
+}
+
+.inputMail:focus{
+    border-color:#0866FF;
+    outline: none;
+    box-shadow: 0 1px 1px rgb(190, 193, 216);
+    
+}
+
+.Knopka{
+    border: none;
+    
+    border-radius: 8px;
+    background-color: #9cb4d8;
+    color:white;
+    width:364px;
+    height: 52px;
+    text-align: center;
+    font-size:20px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-bottom: 20px;
+    transition: 0.15s ease;
+}
+
+.Knopka:hover{
+    background-color: #0866FF;
+}
+
+
+.Forgot{
+    margin-left: 130px;
+    padding-bottom: 20px;
+    color :#1877f2;
+    text-decoration: none;
+}
+.Forgot:hover{
+    text-decoration: underline;
+}
+
+hr {
+    margin-top: 20px;
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-bottom:25px;
+}
+
+.Button2{
+    background-color: #42B72A;
+    width: 231.41px;
+    height: 48px;
+    margin-left: 75px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size:17.5px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    transition: 0.15s ease;
+    margin-bottom: 20px;
+
+}
+.Button2:hover{
+    background-color:#276d18
+}
+
+.BlackHref{
+    color: black;
+    text-decoration: none; 
+    font-weight: bold;
+}
+.BlackHref:hover{
+    text-decoration: underline;
+}
+#LilPara{
+    text-align: center;
+}

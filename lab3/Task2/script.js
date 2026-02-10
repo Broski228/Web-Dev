@@ -1,4 +1,4 @@
-const input = document.getElementById("input-box");
+ const input = document.getElementById("input-box");
  const list = document.getElementById("list");
 
  function addTask(){

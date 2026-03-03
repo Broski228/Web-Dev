@@ -1,0 +1,39 @@
+<div class="albums-page">
+  <div class="page-header">
+    <h1 class="page-title">Albums</h1>
+    <p class="page-meta" *ngIf="!loading">{{ albums.length }} albums</p>
+  </div>
+
+  <!-- Loading State -->
+  <div class="loading-state" *ngIf="loading">
+    <div class="spinner"></div>
+    <p>Loading albums...</p>
+  </div>
+
+  <!-- Empty State -->
+  <div class="empty-state" *ngIf="!loading && albums.length === 0">
+    <p>No albums found.</p>
+  </div>
+
+  <!-- Albums List -->
+  <ul class="albums-list" *ngIf="!loading && albums.length > 0">
+    <li
+      class="album-item"
+      *ngFor="let album of albums"
+      (click)="goToAlbum(album.id)"
+      [class.deleting]="isDeleting(album.id)"
+    >
+      <div class="album-id">#{{ album.id }}</div>
+      <div class="album-title">{{ album.title }}</div>
+      <button
+        class="btn-delete"
+        (click)="deleteAlbum($event, album.id)"
+        [disabled]="isDeleting(album.id)"
+        title="Delete album"
+      >
+        <span *ngIf="!isDeleting(album.id)">✕</span>
+        <span *ngIf="isDeleting(album.id)" class="mini-spinner"></span>
+      </button>
+    </li>
+  </ul>
+</div>
